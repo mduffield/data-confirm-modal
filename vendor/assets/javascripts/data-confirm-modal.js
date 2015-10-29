@@ -76,6 +76,7 @@
           options.onConfirm.call();
 
         modal.modal('hide');
+        return true;
       });
 
       modal.find('.cancel').on('click', function () {
