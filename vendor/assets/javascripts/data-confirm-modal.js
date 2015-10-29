@@ -73,9 +73,8 @@
 
       modal.find('.commit').on('click', function () {
         if (options.onConfirm && options.onConfirm.call)
-          //options.onConfirm.call();
-        return true;
-        modal.modal('hide');
+          options.onConfirm.call();
+        //modal.modal('hide');
       });
 
       modal.find('.cancel').on('click', function () {
